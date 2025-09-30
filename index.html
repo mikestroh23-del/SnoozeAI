@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SnoozAI - AI Consulting & Automation Solutions</title>
+    <meta name="description" content="Stop drowning in manual tasks. SnoozAI provides AI automation solutions to save time, cut costs, and grow your business.">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.2; }
+            50% { opacity: 0.3; }
+        }
+        .pulse-glow-1 { animation: pulse-glow 4s ease-in-out infinite; }
+        .pulse-glow-2 { animation: pulse-glow 4s ease-in-out infinite 1s; }
+        .pulse-glow-3 { animation: pulse-glow 4s ease-in-out infinite 2s; }
+        
+        html { scroll-behavior: smooth; }
+        
+        .circuit-bg {
+            background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='1'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white">
+    
+    <!-- Animated Background -->
+    <div class="fixed inset-0 overflow-hidden pointer-events-none">
+        <div class="absolute top-20 left-20 w-64 h-64 bg-cyan-500 rounded-full filter blur-3xl pulse-glow-1"></div>
+        <div class="absolute bottom-20 right-20 w-96 h-96 bg-purple-500 rounded-full filter blur-3xl pulse-glow-2"></div>
+        <div class="absolute top-1/2 left-1/2 w-72 h-72 bg-pink-500 rounded-full filter blur-3xl pulse-glow-3"></div>
+    </div>
+    
+    <div class="fixed inset-0 circuit-bg opacity-10 pointer-events-none"></div>
+
+    <!-- Navigation -->
+    <nav class="relative z-10 container mx-auto px-6 py-6">
+        <div class="flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <svg class="w-8 h-8 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                </svg>
+                <span class="text-2xl font-bold bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent">SnoozAI</span>
+            </div>
+            <a href="#contact" class="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 px-6 py-2 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-cyan-500/50">
+                Get Started
+            </a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="relative z-10 container mx-auto px-6 py-20">
+        <div class="grid md:grid-cols-2 gap-12 items-center">
+            <div class="space-y-6">
+                <h1 class="text-5xl md:text-6xl font-bold leading-tight">
+                    Stop Drowning in
+                    <span class="bg-gradient-to-r from-cyan-400 to-purple-400 bg-clip-text text-transparent"> Manual Tasks</span>
+                </h1>
+                <p class="text-xl text-gray-300">
+                    Let AI automation handle the busywork while you focus on growing your business. Save time, cut costs, and eliminate frustration.
+                </p>
+                <div class="flex flex-wrap gap-4">
+                    <a href="#contact" class="bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 px-8 py-4 rounded-full font-semibold transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 inline-flex items-center gap-2">
+                        Free Consultation 
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"></path>
+                        </svg>
+                    </a>
+                    <a href="#solutions" class="border-2 border-cyan-400 hover:bg-cyan-400/10 px-8 py-4 rounded-full font-semibold transition-all duration-300">
+                        See Solutions
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Hero Image -->
+            <div class="relative">
+                <div class="bg-gradient-to-br from-slate-800 to-slate-900 rounded-2xl p-8 shadow-2xl border border-purple-500/20">
+                    <div class="aspect-square bg-gradient-to-br from-red-900/30 to-orange-900/30 rounded-xl flex items-center justify-center relative overflow-hidden">
+                        <div class="absolute inset-0 bg-black/40"></div>
+                        <div class="relative z-10 text-center p-8">
+                            <div class="text-6xl mb-4">😫</div>
+                            <div class="space-y-2">
+                                <div class="bg-white/90 text-slate-800 px-4 py-2 rounded transform rotate-2 shadow-lg">📄 Invoice #1247</div>
+                                <div class="bg-white/90 text-slate-800 px-4 py-2 rounded transform -rotate-3 shadow-lg">📊 Report Due</div>
+                                <div class="bg-white/90 text-slate-800 px-4 py-2 rounded transform rotate-1 shadow-lg">📧 100+ Emails</div>
+                                <div class="bg-white/90 text-slate-800 px-4 py-2 rounded transform -rotate-2 shadow-lg">⏰ Deadline: TODAY</div>
+                            </div>
+                            <p class="mt-4 text-gray-300 font-semibold">Sound familiar?</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pain Points Section -->
+    <section id="pain-points" class="relative z-10 container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Are These Problems Costing You?</h2>
+            <p class="text-xl text-gray-300">Every manual task is money and time slipping away</p>
+        </div>
+        
+        <div class="grid md:grid-cols-3 gap-8">
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-cyan-500/20 rounded-xl p-8 hover:border-cyan-500/50 transition-all duration-300 hover:transform hover:scale-105">
+                <svg class="w-12 h-12 text-cyan-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h3 class="text-2xl font-bold mb-3">Wasting Hours Daily</h3>
+                <p class="text-gray-300 mb-4">Repetitive data entry, manual reports, and copy-paste tasks eating up your valuable time?</p>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="flex items-start gap-2"><span class="text-red-400 mt-1">•</span> Manual data entry taking hours</li>
+                    <li class="flex items-start gap-2"><span class="text-red-400 mt-1">•</span> Creating the same reports weekly</li>
+                    <li class="flex items-start gap-2"><span class="text-red-400 mt-1">•</span> Copying data between systems</li>
+                </ul>
+            </div>
+
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-xl p-8 hover:border-purple-500/50 transition-all duration-300 hover:transform hover:scale-105">
+                <svg class="w-12 h-12 text-purple-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                </svg>
+                <h3 class="text-2xl font-bold mb-3">Money Down the Drain</h3>
+                <p class="text-gray-300 mb-4">Paying staff for work that AI could handle instantly, accurately, and 24/7?</p>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="flex items-start gap-2"><span class="text-red-400 mt-1">•</span> High labor costs for routine work</li>
+                    <li class="flex items-start gap-2"><span class="text-red-400 mt-1">•</span> Expensive human errors</li>
+                    <li class="flex items-start gap-2"><span class="text-red-400 mt-1">•</span> Overtime for deadline crunches</li>
+                </ul>
+            </div>
+
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-pink-500/20 rounded-xl p-8 hover:border-pink-500/50 transition-all duration-300 hover:transform hover:scale-105">
+                <svg class="w-12 h-12 text-pink-400 mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                </svg>
+                <h3 class="text-2xl font-bold mb-3">Missing Opportunities</h3>
+                <p class="text-gray-300 mb-4">Too busy with busywork to focus on growth, innovation, and what really matters?</p>
+                <ul class="space-y-2 text-gray-400">
+                    <li class="flex items-start gap-2"><span class="text-red-400 mt-1">•</span> No time for strategic thinking</li>
+                    <li class="flex items-start gap-2"><span class="text-red-400 mt-1">•</span> Slow response to customers</li>
+                    <li class="flex items-start gap-2"><span class="text-red-400 mt-1">•</span> Can't scale without hiring</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Solutions Section -->
+    <section id="solutions" class="relative z-10 container mx-auto px-6 py-20">
+        <div class="text-center mb-16">
+            <h2 class="text-4xl font-bold mb-4">Our AI Automation Solutions</h2>
+            <p class="text-xl text-gray-300">Transform your business operations with intelligent automation</p>
+        </div>
+
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300">
+                <div class="text-4xl mb-3">📊</div>
+                <h3 class="text-xl font-bold mb-2">Data Automation</h3>
+                <p class="text-gray-300">Eliminate manual data entry and sync systems automatically</p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300">
+                <div class="text-4xl mb-3">📄</div>
+                <h3 class="text-xl font-bold mb-2">Document Processing</h3>
+                <p class="text-gray-300">Extract and process information from invoices, forms, and PDFs</p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300">
+                <div class="text-4xl mb-3">💬</div>
+                <h3 class="text-xl font-bold mb-2">Customer Service AI</h3>
+                <p class="text-gray-300">24/7 intelligent chatbots and automated response systems</p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300">
+                <div class="text-4xl mb-3">⚙️</div>
+                <h3 class="text-xl font-bold mb-2">Workflow Automation</h3>
+                <p class="text-gray-300">Connect your tools and automate repetitive workflows</p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300">
+                <div class="text-4xl mb-3">📈</div>
+                <h3 class="text-xl font-bold mb-2">Report Generation</h3>
+                <p class="text-gray-300">Automatic creation of reports, dashboards, and analytics</p>
+            </div>
+            
+            <div class="bg-gradient-to-br from-slate-800/80 to-slate-900/80 backdrop-blur-sm border border-purple-500/20 rounded-xl p-6 hover:border-purple-500/50 transition-all duration-300">
+                <div class="text-4xl mb-3">✉️</div>
+                <h3 class="text-xl font-bold mb-2">Email & Communication</h3>
+                <p class="text-gray-300">Smart email sorting, responses, and follow-up automation</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Benefits Section -->
+    <section class="relative z-10 container mx-auto px-6 py-20">
+        <div class="bg-gradient-to-br from-cyan-900/20 to-purple-900/20 backdrop-blur-sm border border-cyan-500/30 rounded-2xl p-12">
+            <h2 class="text-4xl font-bold mb-12 text-center">Why Choose SnoozAI?</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="flex gap-4">
+                    <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Save 20+ Hours Per Week</h3>
+                        <p class="text-gray-300">Automate the tasks that drain your time</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Reduce Costs by 40%+</h3>
+                        <p class="text-gray-300">Lower operational expenses with AI efficiency</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">99.9% Accuracy</h3>
+                        <p class="text-gray-300">Eliminate costly human errors</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Scale Without Hiring</h3>
+                        <p class="text-gray-300">Grow your business without growing headcount</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">24/7 Operation</h3>
+                        <p class="text-gray-300">Your AI never sleeps, takes breaks, or calls in sick</p>
+                    </div>
+                </div>
+                
+                <div class="flex gap-4">
+                    <svg class="w-6 h-6 text-green-400 flex-shrink-0 mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Fast Implementation</h3>
+                        <p class="text-gray-300">Most solutions deployed in 2-4 weeks</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="relative z-10 container mx-auto px-6 py-20">
+        <div class="max-w-3xl mx-auto">
+            <div class="text-center mb-12">
+                <h2 class="text-4xl font-bold mb-4">Ready to Automate Your Business?</h2>
+                <p class="text-xl text-gray-300">Get a free consultation and discover how much time and money you could save</p>
+            </div>
+
+            <div class="bg-slate-800/50 backdrop-blur-sm border border-purple-500/20 rounded-2xl p-8">
+                <div id="contactForm" class="space-y-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Your Name *</label>
+                            <input
+                                type="text"
+                                id="name"
+                                class="w-full px-4 py-3 bg-slate-900/50 border border-purple-500/30 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors text-white"
+                                placeholder="John Doe"
+                                required
+                            />
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold mb-2">Email Address *</label>
+                            <input
+                                type="email"
+                                id="email"
+                                class="w-full px-4 py-3 bg-slate-900/50 border border-purple-500/30 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors text-white"
+                                placeholder="john@company.com"
+                                required
+                            />
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Company Name *</label>
+                        <input
+                            type="text"
+                            id="company"
+                            class="w-full px-4 py-3 bg-slate-900/50 border border-purple-500/30 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors text-white"
+                            placeholder="Your Company Inc."
+                            required
+                        />
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">What's Your Biggest Pain Point? *</label>
+                        <select
+                            id="painPoint"
+                            class="w-full px-4 py-3 bg-slate-900/50 border border-purple-500/30 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors text-white"
+                            required
+                        >
+                            <option value="">Select a pain point...</option>
+                            <option value="manual-data-entry">Too much manual data entry</option>
+                            <option value="time-consuming-reports">Time-consuming reports</option>
+                            <option value="customer-service">Customer service backlog</option>
+                            <option value="document-processing">Document processing</option>
+                            <option value="workflow-inefficiency">Inefficient workflows</option>
+                            <option value="scaling-issues">Struggling to scale</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold mb-2">Tell Us More (Optional)</label>
+                        <textarea
+                            id="message"
+                            rows="4"
+                            class="w-full px-4 py-3 bg-slate-900/50 border border-purple-500/30 rounded-lg focus:border-cyan-400 focus:outline-none transition-colors resize-none text-white"
+                            placeholder="Describe your specific challenges..."
+                        ></textarea>
+                    </div>
+
+                    <button
+                        onclick="submitForm()"
+                        class="w-full bg-gradient-to-r from-cyan-500 to-purple-600 hover:from-cyan-600 hover:to-purple-700 px-8 py-4 rounded-lg font-semibold transition-all duration-300 shadow-lg hover:shadow-cyan-500/50 flex items-center justify-center gap-2"
+                    >
+                        <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                        </svg>
+                        Send Message
+                    </button>
+                </div>
+
+                <div id="successMessage" class="hidden text-center py-12">
+                    <svg class="w-16 h-16 text-green-400 mx-auto mb-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                    </svg>
+                    <h3 class="text-2xl font-bold mb-2">Thank You!</h3>
+                    <p class="text-gray-300">We'll get back to you within 24 hours.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="relative z-10 border-t border-purple-500/20 py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div class="flex items-center space-x-2">
+                    <svg class="w-6 h-6 text-cyan-400" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"></path>
+                    </svg>
+                    <span class="text-xl font-bold">SnoozAI</span>
+                </div>
+                <p class="text-gray-400">© 2025 SnoozAI. All rights reserved.</p>
+                <div class="flex gap-6">
+                    <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors">Privacy Policy</a>
+                    <a href="#" class="text-gray-400 hover:text-cyan-400 transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        function submitForm() {
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const company = document.getElementById('company').value;
+            const painPoint = document.getElementById('painPoint').value;
+            const message = document.getElementById('message').value;
+
+            if (!name || !email || !company || !painPoint) {
+                alert('Please fill in all required fields');
+                return;
+            }
+
+            const subject = encodeURIComponent(`SnoozAI Consultation Request - ${company}`);
+            const body = encodeURIComponent(`Name: ${name}\nEmail: ${email}\nCompany: ${company}\nPain Point: ${painPoint}\n\nMessage:\n${message}`);
+            
+            window.location.href = `mailto:mike.strohschein@icloud.com?subject=${subject}&body=${body}`;
+            
+            document.getElementById('contactForm').classList.add('hidden');
+            document.getElementById('successMessage').classList.remove('hidden');
+            
+            setTimeout(() => {
+                document.getElementById('contactForm').classList.remove('hidden');
+                document.getElementById('successMessage').classList.add('hidden');
+                document.getElementById('name').value = '';
+                document.getElementById('email').value = '';
+                document.getElementById('company').value = '';
+                document.getElementById('painPoint').value = '';
+                document.getElementById('message').value = '';
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
